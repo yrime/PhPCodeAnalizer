@@ -48,16 +48,18 @@ class DatabaseCreater:
       files = FilesFinder(base_dir)
       found_files = files.find(extensions, exclude_dirs)
       for f in found_files:
-         self.files.add(f)
-    #  print(self.files.get_table(), self.files.size())
+         func_list = self.function_table(f)
+         self.files.add(f, func_list)
+      print(self.files.get_table(), self.files.size())
+      self.files.print()
     
-   def function_table(self):
-      for f in self.files.get_table():
-         self.__funcion_table(f.name)
+   def function_table(self, f):
+      #for f in self.files.get_table():
+      return self.__funcion_table(f)
     
    def __funcion_table(self, f):
       content = phpy.call("./parse_functions.php", f)
-      print(content)
+      return content
 
 f = FilesFinder("~/Desktop/php_invasion")
 python_files = f.find(extensions=['.py'])
@@ -65,4 +67,4 @@ print(f"Найдено {len(python_files)} Python файлов", python_files)
 
 d = DatabaseCreater()
 d.files_table("~/Desktop/php_invasion", extensions=['.php'])
-d.function_table()
+#.function_table()

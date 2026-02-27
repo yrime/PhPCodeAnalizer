@@ -57,7 +57,12 @@ class Table:
       else:
          print("args is empty")
          return None
-            
+    
+   def print(self):
+      for bt in self.base_table:
+         print(bt.name)
+         print(bt.list_el)
+#      print(self.base_table)             
 
       
 a = Table()

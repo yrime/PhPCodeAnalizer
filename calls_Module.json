@@ -1,0 +1,26 @@
+[
+    {
+        "type": "parent_call",
+        "class": "parent",
+        "method": "getInstance",
+        "line": 37
+    },
+    {
+        "type": "parent_call",
+        "class": "parent",
+        "method": "Decorator",
+        "line": 45
+    },
+    {
+        "type": "static_call",
+        "class": "",
+        "method": "Decorator",
+        "line": 63
+    },
+    {
+        "type": "static_call",
+        "class": "",
+        "method": "Decorator",
+        "line": 66
+    }
+]

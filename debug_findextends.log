@@ -1,0 +1,25 @@
+
+2026-02-27 16:09:59 - Поиск extends для позиции 10
+Токен класса: T_CLASS = 'class'
+  Токен 11: T_WHITESPACE = ' '
+  Токен 12: T_STRING = 'Module'
+  Токен 13: T_WHITESPACE = ' '
+  Токен 14: T_EXTENDS = 'extends'
+  ✅ НАЙДЕН T_EXTENDS на позиции 14!
+    Пропускаем пробел: ' '
+    Неизвестный токен: T_NAME_FULLY_QUALIFIED
+  ИТОГО: extends = ''
+  Детально: []
+
+2026-02-27 16:11:18 - Поиск extends для позиции 10
+Токен класса: T_CLASS = 'class'
+  Токен 11: T_WHITESPACE = ' '
+  Токен 12: T_STRING = 'Module'
+  Токен 13: T_WHITESPACE = ' '
+  Токен 14: T_EXTENDS = 'extends'
+  ✅ НАЙДЕН T_EXTENDS на позиции 14!
+    Пропускаем пробел: ' '
+    Следующий токен тип: T_NAME_FULLY_QUALIFIED
+    Найден PHP 8 токен: '\Aurora\System\Module\AbstractModule' (T_NAME_FULLY_QUALIFIED)
+  ИТОГО: extends = '\Aurora\System\Module\AbstractModule'
+  Детально: [{"type":"T_NAME_FULLY_QUALIFIED","text":"\\Aurora\\System\\Module\\AbstractModule"}]
